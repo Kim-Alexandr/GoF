@@ -5,8 +5,8 @@ plugins {
 dependencies {
     implementation(project(":shared-core"))
     implementation(project(":shared-navigation"))
+    implementation(project(":feature-selection"))
 
-    //check it for extra libs later
     implementation (AndroidX.material)
     implementation (AndroidX.navigation)
 

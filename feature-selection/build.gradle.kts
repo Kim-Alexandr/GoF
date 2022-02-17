@@ -4,8 +4,8 @@ plugins {
 
 dependencies {
     implementation(project(":shared-navigation"))
+    implementation(project(":shared-core"))
 
-//    implementation(AndroidX.appcompat)
     implementation(AndroidX.fragment)
     implementation(Libraries.viewBinding)
 

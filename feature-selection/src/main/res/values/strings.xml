@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="provide_solid">Ознакомиться с принципами SOLID</string>
-    <string name="provide_patterns">Ознакомиться с паттернами проектирования</string>
+    <string name="provide_solid">Ознакомиться с SOLID</string>
+    <string name="provide_patterns">Ознакомиться с GoF</string>
 </resources>
