@@ -7,6 +7,7 @@ dependencies {
     implementation(project(":shared-navigation"))
     implementation(project(":feature-selection"))
     implementation(project(":feature-solid"))
+    implementation(project(":feature-patterns"))
 
     implementation (AndroidX.material)
     implementation (AndroidX.navigation)

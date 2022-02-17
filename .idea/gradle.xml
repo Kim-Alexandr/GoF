@@ -22,6 +22,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/feature-patterns" />
             <option value="$PROJECT_DIR$/feature-selection" />
             <option value="$PROJECT_DIR$/feature-solid" />
             <option value="$PROJECT_DIR$/gradle-convection" />

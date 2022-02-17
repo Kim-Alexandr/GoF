@@ -32,8 +32,13 @@ class SelectionFragment : Fragment(R.layout.selection_fragment), HasAndroidInjec
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        layout.openSolidBtn.setOnClickListener {
-            navigate(solidNavigation.toSOLID)
+        with(layout) {
+            openSolidBtn.setOnClickListener {
+                navigate(solidNavigation.toSOLID)
+            }
+            openPrincipalBtn.setOnClickListener {
+                navigate(solidNavigation.toGoF)
+            }
         }
     }
 

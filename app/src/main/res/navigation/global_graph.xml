@@ -11,9 +11,16 @@
         <action
             android:id="@+id/action_selectionFragment_to_solidFragment"
             app:destination="@id/solidFragment" />
+        <action
+            android:id="@+id/action_selectionFragment_to_patternsFragment"
+            app:destination="@id/patternsFragment" />
     </fragment>
     <fragment
         android:id="@+id/solidFragment"
         android:name="com.b4sel.feature.solid.SolidFragment"
         android:label="SolidFragment" />
+    <fragment
+        android:id="@+id/patternsFragment"
+        android:name="com.b4sel.feature.patterns.PatternsFragment"
+        android:label="PatternsFragment" />
 </navigation>

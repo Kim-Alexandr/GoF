@@ -6,7 +6,6 @@ import com.b4sel.shared.navigation.NavigationCommand
 import javax.inject.Inject
 
 class SelectionNavigationImpl @Inject constructor(): SelectionNavigation {
-    override val toGoF: NavigationCommand
-        get() = TODO("Not yet implemented")
+    override val toGoF = NavigationCommand(R.id.action_selectionFragment_to_patternsFragment)
     override val toSOLID = NavigationCommand(R.id.action_selectionFragment_to_solidFragment)
 }
