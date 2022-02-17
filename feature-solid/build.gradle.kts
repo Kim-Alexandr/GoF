@@ -1,15 +1,13 @@
 plugins {
-    id("android-application-convection")
+    id("android-library-convection")
 }
 
 dependencies {
-    implementation(project(":shared-core"))
     implementation(project(":shared-navigation"))
-    implementation(project(":feature-selection"))
-    implementation(project(":feature-solid"))
+    implementation(project(":shared-core"))
 
-    implementation (AndroidX.material)
-    implementation (AndroidX.navigation)
+    implementation(AndroidX.fragment)
+    implementation(Libraries.viewBinding)
 
     implementation(Dagger.dagger)
     kapt(Dagger.daggerCompile)
