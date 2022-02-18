@@ -24,7 +24,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PatternCatalog"
+rootProject.name = "GoF"
 
 includeBuild("gradle-convection")
 
@@ -34,3 +34,4 @@ include(":shared-navigation")
 include(":feature-selection")
 include(":feature-solid")
 include(":feature-patterns")
+include(":feature-creational")

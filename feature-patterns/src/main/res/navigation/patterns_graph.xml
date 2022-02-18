@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/patterns_graph"
+    app:startDestination="@id/creationalFragment">
+
+    <fragment
+        android:id="@+id/creationalFragment"
+        android:name="com.b4sel.feature.creational.CreationalFragment"
+        android:label="CreationalFragment" />
+</navigation>

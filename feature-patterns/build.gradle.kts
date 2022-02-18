@@ -3,10 +3,15 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":feature-creational"))
     implementation(project(":shared-navigation"))
     implementation(project(":shared-core"))
 
+    implementation(AndroidX.appcompat)
     implementation(AndroidX.fragment)
+    implementation(AndroidX.material)
+    implementation(AndroidX.navigation)
+    implementation(AndroidX.navigationUi)
     implementation(Libraries.viewBinding)
 
     implementation(Dagger.dagger)
