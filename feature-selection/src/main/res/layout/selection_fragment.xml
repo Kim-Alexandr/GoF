@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/space_8"
     android:gravity="center">
-    <!-- todo добавь чуть-чуть цвета -->
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/open_solid_btn"
         android:text="@string/provide_solid"
