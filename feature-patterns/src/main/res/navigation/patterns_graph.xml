@@ -8,4 +8,12 @@
         android:id="@+id/creationalFragment"
         android:name="com.b4sel.feature.creational.CreationalFragment"
         android:label="CreationalFragment" />
+    <fragment
+        android:id="@+id/structuralFragment"
+        android:name="com.b4sel.feature.structural.StructuralFragment"
+        android:label="StructuralFragment" />
+    <fragment
+        android:id="@+id/behavioralFragment"
+        android:name="com.b4sel.feature.behavioral.BehavioralFragment"
+        android:label="BehavioralFragment" />
 </navigation>

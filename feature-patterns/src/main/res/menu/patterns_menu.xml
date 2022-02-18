@@ -13,7 +13,7 @@
         android:title="@string/patterns_structural" />
 
     <item
-        android:id="@+id/settingsFragment"
+        android:id="@+id/behavioralFragment"
         android:icon="@android:drawable/stat_sys_download_done"
         android:title="@string/patterns_behavioural" />
 </menu>

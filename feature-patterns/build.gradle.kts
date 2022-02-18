@@ -3,7 +3,9 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":feature-behavioral"))
     implementation(project(":feature-creational"))
+    implementation(project(":feature-structural"))
     implementation(project(":shared-navigation"))
     implementation(project(":shared-core"))
 
