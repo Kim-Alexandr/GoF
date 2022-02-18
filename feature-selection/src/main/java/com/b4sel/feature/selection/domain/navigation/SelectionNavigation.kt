@@ -1,4 +1,4 @@
-package com.b4sel.feature.selection.navigation
+package com.b4sel.feature.selection.domain.navigation
 
 import com.b4sel.shared.navigation.NavigationCommand
 

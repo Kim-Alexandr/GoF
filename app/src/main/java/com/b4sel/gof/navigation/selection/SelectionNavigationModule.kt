@@ -1,6 +1,6 @@
 package com.b4sel.gof.navigation.selection
 
-import com.b4sel.feature.selection.navigation.SelectionNavigation
+import com.b4sel.feature.selection.domain.navigation.SelectionNavigation
 import dagger.Binds
 import dagger.Module
 

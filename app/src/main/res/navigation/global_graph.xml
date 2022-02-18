@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/selectionFragment"
-        android:name="com.b4sel.feature.selection.SelectionFragment"
+        android:name="com.b4sel.feature.selection.ui.fragment.SelectionFragment"
         android:label="SelectionFragment" >
         <action
             android:id="@+id/action_selectionFragment_to_solidFragment"
