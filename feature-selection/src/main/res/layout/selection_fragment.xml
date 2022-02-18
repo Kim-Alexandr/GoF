@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/space_8"
     android:gravity="center">
     <!-- todo добавь чуть-чуть цвета -->
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/open_solid_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/provide_solid"
-        android:gravity="center"
-        android:paddingTop="@dimen/space_8"
-        android:paddingBottom="@dimen/space_8"
-        android:layout_marginBottom="@dimen/space_8"
-        android:textAllCaps="false"
-        style="@style/TextAppearance.AppCompat.Large" />
+        app:cornerRadius="@dimen/space_16"
+        app:rippleColor="?attr/colorControlHighlight"
+        style="@style/SelectionPrimaryButton" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/open_principal_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/provide_patterns"
-        android:gravity="center"
-        android:paddingTop="@dimen/space_8"
-        android:paddingBottom="@dimen/space_8"
-        android:textAllCaps="false"
-        style="@style/TextAppearance.AppCompat.Large" />
+        app:cornerRadius="@dimen/space_16"
+        app:rippleColor="?attr/colorControlHighlight"
+        style="@style/SelectionPrimaryButton" />
 
 </LinearLayout>

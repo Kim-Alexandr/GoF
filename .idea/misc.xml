@@ -8,7 +8,8 @@
         <entry key="feature-creational/src/main/res/layout/creational_fragment.xml" value="0.2006340579710145" />
         <entry key="feature-patterns/src/main/res/layout/patterns_fragment.xml" value="0.2006340579710145" />
         <entry key="feature-patterns/src/main/res/menu/patterns_menu.xml" value="0.24375" />
-        <entry key="feature-selection/src/main/res/layout/selection_fragment.xml" value="0.2006340579710145" />
+        <entry key="feature-selection/src/main/res/drawable/selection_button.xml" value="0.211" />
+        <entry key="feature-selection/src/main/res/layout/selection_fragment.xml" value="0.25" />
         <entry key="feature-solid/src/main/res/layout/solid_fragment.xml" value="0.2006340579710145" />
         <entry key="feature-structural/src/main/res/layout/structural_fragment.xml" value="0.2006340579710145" />
       </map>

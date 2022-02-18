@@ -7,6 +7,7 @@ dependencies {
     implementation(project(":shared-core"))
 
     implementation(AndroidX.fragment)
+    implementation(AndroidX.material)
     implementation(Libraries.viewBinding)
 
     implementation(Dagger.dagger)
