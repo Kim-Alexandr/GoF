@@ -5,9 +5,11 @@ plugins {
 dependencies {
     implementation(project(":shared-core"))
     implementation(project(":shared-navigation"))
+
     implementation(project(":feature-selection"))
     implementation(project(":feature-solid"))
     implementation(project(":feature-patterns"))
+    implementation(project(":feature-srp"))
 
     implementation (AndroidX.material)
     implementation (AndroidX.navigation)

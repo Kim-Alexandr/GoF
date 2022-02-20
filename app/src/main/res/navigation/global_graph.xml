@@ -18,9 +18,17 @@
     <fragment
         android:id="@+id/solidFragment"
         android:name="com.b4sel.feature.solid.ui.fragment.SolidFragment"
-        android:label="SolidFragment" />
+        android:label="SolidFragment" >
+        <action
+            android:id="@+id/action_solidFragment_to_srpFragment"
+            app:destination="@id/srpFragment" />
+    </fragment>
     <fragment
         android:id="@+id/patternsFragment"
         android:name="com.b4sel.feature.patterns.PatternsFragment"
         android:label="PatternsFragment" />
+    <fragment
+        android:id="@+id/srpFragment"
+        android:name="com.b4sel.feature.srp.SrpFragment"
+        android:label="SrpFragment" />
 </navigation>
