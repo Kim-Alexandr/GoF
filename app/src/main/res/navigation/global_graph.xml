@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_solidFragment_to_srpFragment"
             app:destination="@id/srpFragment" />
+        <action
+            android:id="@+id/action_solidFragment_to_ocpFragment"
+            app:destination="@id/ocpFragment" />
     </fragment>
     <fragment
         android:id="@+id/patternsFragment"
@@ -31,4 +34,8 @@
         android:id="@+id/srpFragment"
         android:name="com.b4sel.feature.srp.SrpFragment"
         android:label="SrpFragment" />
+    <fragment
+        android:id="@+id/ocpFragment"
+        android:name="com.b4sel.feature.ocp.OcpFragment"
+        android:label="OcpFragment" />
 </navigation>

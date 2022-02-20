@@ -10,6 +10,7 @@ dependencies {
     implementation(project(":feature-solid"))
     implementation(project(":feature-patterns"))
     implementation(project(":feature-srp"))
+    implementation(project(":feature-ocp"))
 
     implementation (AndroidX.material)
     implementation (AndroidX.navigation)

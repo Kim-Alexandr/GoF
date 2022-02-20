@@ -6,10 +6,8 @@ import com.b4sel.shared.navigation.NavigationCommand
 import javax.inject.Inject
 
 class SolidNavigationImpl @Inject constructor(): SolidNavigation {
-    override val toSrp =
-        NavigationCommand(R.id.action_solidFragment_to_srpFragment)
-    override val toOcp: NavigationCommand
-        get() = TODO("Not yet implemented")
+    override val toSrp = NavigationCommand(R.id.action_solidFragment_to_srpFragment)
+    override val toOcp = NavigationCommand(R.id.action_solidFragment_to_ocpFragment )
     override val toLsp: NavigationCommand
         get() = TODO("Not yet implemented")
     override val toIsp: NavigationCommand

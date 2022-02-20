@@ -33,7 +33,7 @@ class SolidFragment : Fragment(R.layout.solid_fragment) {
             //item click
             when (item) {
                 SRP -> navigate(viewModel.openSrp())
-                OCP -> TODO()
+                OCP -> navigate(viewModel.openOcp())
                 LSP -> TODO()
                 ISP -> TODO()
                 DIP -> TODO()

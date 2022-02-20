@@ -8,6 +8,6 @@ class SolidViewModel @Inject constructor(
     private val solidInteractor: SolidInteractor
 ) : ViewModel() {
 
-    fun openSrp() =
-        solidInteractor.openSrpUseCase()
+    fun openSrp() = solidInteractor.openSrpUseCase()
+    fun openOcp() = solidInteractor.openOcpUseCase()
 }
