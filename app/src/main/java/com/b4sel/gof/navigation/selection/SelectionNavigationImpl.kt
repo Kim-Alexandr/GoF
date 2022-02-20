@@ -7,5 +7,5 @@ import javax.inject.Inject
 
 class SelectionNavigationImpl @Inject constructor(): SelectionNavigation {
     override val toGoF = NavigationCommand(R.id.action_selectionFragment_to_patternsFragment)
-    override val toSOLID = NavigationCommand(R.id.action_selectionFragment_to_solidFragment)
+    override val toSolid = NavigationCommand(R.id.action_selectionFragment_to_solidFragment)
 }

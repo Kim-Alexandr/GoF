@@ -8,7 +8,7 @@ class SelectionViewModel @Inject constructor(
     private val selectionInteractor: SelectionInteractor
 ) : ViewModel() {
 
-    fun openSOLID() =
+    fun openSolid() =
         selectionInteractor.openSolidUseCase()
 
     fun openPrincipal() =

@@ -19,5 +19,5 @@ class OpenSolidUseCaseImpl @Inject constructor() : OpenSolidUseCase, HasAndroidI
         androidInjector
 
     override fun invoke(): NavigationCommand =
-        selectionNavigation.toSOLID
+        selectionNavigation.toSolid
 }

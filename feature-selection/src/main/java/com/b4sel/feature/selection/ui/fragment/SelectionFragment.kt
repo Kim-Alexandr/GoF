@@ -1,6 +1,5 @@
 package com.b4sel.feature.selection.ui.fragment
 
-import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -27,7 +26,7 @@ class SelectionFragment : Fragment(R.layout.selection_fragment) {
         super.onViewCreated(view, savedInstanceState)
         with(layout) {
             openSolidBtn.setOnClickListener {
-                navigate(viewModel.openSOLID())
+                navigate(viewModel.openSolid())
             }
             openPrincipalBtn.setOnClickListener {
                 navigate(viewModel.openPrincipal())
