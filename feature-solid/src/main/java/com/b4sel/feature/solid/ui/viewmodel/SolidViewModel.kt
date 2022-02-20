@@ -16,4 +16,7 @@ class SolidViewModel @Inject constructor(
 
     fun openLsp() =
         solidInteractor.openLspUseCase()
+
+    fun openIsp() =
+        solidInteractor.openIspUseCase()
 }

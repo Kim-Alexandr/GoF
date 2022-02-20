@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_solidFragment_to_lspFragment"
             app:destination="@id/lspFragment" />
+        <action
+            android:id="@+id/action_solidFragment_to_ispFragment"
+            app:destination="@id/ispFragment" />
     </fragment>
     <fragment
         android:id="@+id/patternsFragment"
@@ -45,4 +48,8 @@
         android:id="@+id/lspFragment"
         android:name="com.b4sel.feature.lsp.LspFragment"
         android:label="LspFragment" />
+    <fragment
+        android:id="@+id/ispFragment"
+        android:name="com.b4sel.feature.isp.IspFragment"
+        android:label="IspFragment" />
 </navigation>
