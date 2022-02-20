@@ -13,6 +13,7 @@
         <entry key="feature-selection/src/main/res/layout/selection_fragment.xml" value="0.25" />
         <entry key="feature-solid/src/main/res/layout/solid_fragment.xml" value="0.2006340579710145" />
         <entry key="feature-solid/src/main/res/layout/solid_item.xml" value="0.2006340579710145" />
+        <entry key="feature-srp/src/main/res/drawable/ic_arrow_back.xml" value="0.211" />
         <entry key="feature-srp/src/main/res/layout/srp_fragment.xml" value="0.2006340579710145" />
         <entry key="feature-structural/src/main/res/layout/structural_fragment.xml" value="0.2006340579710145" />
       </map>
