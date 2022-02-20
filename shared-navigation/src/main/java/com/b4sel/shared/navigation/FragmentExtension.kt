@@ -10,5 +10,5 @@ fun Fragment.navigate(navCommand: NavigationCommand, hostId: Int? = null) {
     } else {
         Navigation.findNavController(requireActivity(), hostId)
     }
-    navController.navigate(navCommand.action, navCommand.args, navCommand.navOptions)
+    navController.navigate(navCommand.action)
 }
