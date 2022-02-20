@@ -18,9 +18,9 @@ class SelectionFragment : Fragment(R.layout.selection_fragment) {
     @Inject
     lateinit var viewModel: SelectionViewModel
 
-    override fun onAttach(context: Context) {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         AndroidSupportInjection.inject(this)
-        super.onAttach(context)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

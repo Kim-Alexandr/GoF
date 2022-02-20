@@ -17,10 +17,46 @@
     </fragment>
     <fragment
         android:id="@+id/solidFragment"
-        android:name="com.b4sel.feature.solid.SolidFragment"
-        android:label="SolidFragment" />
+        android:name="com.b4sel.feature.solid.ui.fragment.SolidFragment"
+        android:label="SolidFragment" >
+        <action
+            android:id="@+id/action_solidFragment_to_srpFragment"
+            app:destination="@id/srpFragment" />
+        <action
+            android:id="@+id/action_solidFragment_to_ocpFragment"
+            app:destination="@id/ocpFragment" />
+        <action
+            android:id="@+id/action_solidFragment_to_lspFragment"
+            app:destination="@id/lspFragment" />
+        <action
+            android:id="@+id/action_solidFragment_to_ispFragment"
+            app:destination="@id/ispFragment" />
+        <action
+            android:id="@+id/action_solidFragment_to_dipFragment"
+            app:destination="@id/dipFragment" />
+    </fragment>
     <fragment
         android:id="@+id/patternsFragment"
         android:name="com.b4sel.feature.patterns.PatternsFragment"
         android:label="PatternsFragment" />
+    <fragment
+        android:id="@+id/srpFragment"
+        android:name="com.b4sel.feature.srp.SrpFragment"
+        android:label="SrpFragment" />
+    <fragment
+        android:id="@+id/ocpFragment"
+        android:name="com.b4sel.feature.ocp.OcpFragment"
+        android:label="OcpFragment" />
+    <fragment
+        android:id="@+id/lspFragment"
+        android:name="com.b4sel.feature.lsp.LspFragment"
+        android:label="LspFragment" />
+    <fragment
+        android:id="@+id/ispFragment"
+        android:name="com.b4sel.feature.isp.IspFragment"
+        android:label="IspFragment" />
+    <fragment
+        android:id="@+id/dipFragment"
+        android:name="com.b4sel.feature.dip.DipFragment"
+        android:label="DipFragment" />
 </navigation>
