@@ -31,6 +31,7 @@
             <option value="$PROJECT_DIR$/gradle-convection" />
             <option value="$PROJECT_DIR$/shared-core" />
             <option value="$PROJECT_DIR$/shared-navigation" />
+            <option value="$PROJECT_DIR$/shared-solid" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

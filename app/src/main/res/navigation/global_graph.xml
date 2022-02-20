@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/solidFragment"
-        android:name="com.b4sel.feature.solid.SolidFragment"
+        android:name="com.b4sel.feature.solid.ui.fragment.SolidFragment"
         android:label="SolidFragment" />
     <fragment
         android:id="@+id/patternsFragment"
