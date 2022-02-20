@@ -11,6 +11,7 @@ dependencies {
     implementation(project(":feature-patterns"))
     implementation(project(":feature-srp"))
     implementation(project(":feature-ocp"))
+    implementation(project(":feature-lsp"))
 
     implementation (AndroidX.material)
     implementation (AndroidX.navigation)

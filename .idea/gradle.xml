@@ -24,6 +24,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/feature-behavioral" />
             <option value="$PROJECT_DIR$/feature-creational" />
+            <option value="$PROJECT_DIR$/feature-lsp" />
             <option value="$PROJECT_DIR$/feature-ocp" />
             <option value="$PROJECT_DIR$/feature-patterns" />
             <option value="$PROJECT_DIR$/feature-selection" />
