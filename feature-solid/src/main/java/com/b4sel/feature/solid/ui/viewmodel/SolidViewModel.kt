@@ -19,4 +19,7 @@ class SolidViewModel @Inject constructor(
 
     fun openIsp() =
         solidInteractor.openIspUseCase()
+
+    fun openDip() =
+        solidInteractor.openDipUseCase()
 }

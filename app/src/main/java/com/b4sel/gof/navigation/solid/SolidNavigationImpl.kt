@@ -10,6 +10,5 @@ class SolidNavigationImpl @Inject constructor(): SolidNavigation {
     override val toOcp = NavigationCommand(R.id.action_solidFragment_to_ocpFragment )
     override val toLsp = NavigationCommand(R.id.action_solidFragment_to_lspFragment)
     override val toIsp = NavigationCommand(R.id.action_solidFragment_to_ispFragment)
-    override val toDip: NavigationCommand
-        get() = TODO("Not yet implemented")
+    override val toDip = NavigationCommand(R.id.action_solidFragment_to_dipFragment)
 }

@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2006340579710145" />
         <entry key="feature-behavioral/src/main/res/layout/behavioral_fragment.xml" value="0.2006340579710145" />
         <entry key="feature-creational/src/main/res/layout/creational_fragment.xml" value="0.2006340579710145" />
+        <entry key="feature-dip/src/main/res/layout/dip_fragment.xml" value="0.2006340579710145" />
         <entry key="feature-isp/src/main/res/layout/isp_fragment.xml" value="0.2006340579710145" />
         <entry key="feature-lsp/src/main/res/layout/lsp_fragment.xml" value="0.2006340579710145" />
         <entry key="feature-ocp/src/main/res/layout/ocp_fragment.xml" value="0.2006340579710145" />

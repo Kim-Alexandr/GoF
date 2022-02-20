@@ -36,7 +36,7 @@ class SolidFragment : Fragment(R.layout.solid_fragment) {
                 OCP -> navigate(viewModel.openOcp())
                 LSP -> navigate(viewModel.openLsp())
                 ISP -> navigate(viewModel.openIsp())
-                DIP -> TODO()
+                DIP -> navigate(viewModel.openDip())
             }
         }
     }
