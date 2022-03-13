@@ -2,7 +2,6 @@ package com.b4sel.gof.di.module
 
 import com.b4sel.feature.selection.ui.fragment.SelectionFragment
 import com.b4sel.feature.selection.di.SelectionFragmentModule
-import com.b4sel.feature.solid.di.SolidFragmentModule
 import com.b4sel.feature.solid.ui.fragment.SolidFragment
 import com.b4sel.shared.core.scope.FragmentScope
 import dagger.Module
@@ -20,11 +19,6 @@ interface AppActivityModule {
     fun selectionFragmentInjector(): SelectionFragment
 
     @FragmentScope
-    @ContributesAndroidInjector(
-        modules = [
-            SolidFragmentModule::class
-        ]
-    )
+    @ContributesAndroidInjector
     fun solidFragmentInjector(): SolidFragment
-
 }

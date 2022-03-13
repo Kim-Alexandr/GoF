@@ -1,4 +1,4 @@
-package com.b4sel.feature.solid.presentation.usecase
+package com.b4sel.feature.solid.presentation
 
 import androidx.fragment.app.Fragment
 import com.b4sel.feature.solid.domain.navigation.SolidNavigation

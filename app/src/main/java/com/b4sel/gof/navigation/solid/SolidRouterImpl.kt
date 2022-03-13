@@ -3,7 +3,6 @@ package com.b4sel.gof.navigation.solid
 import androidx.fragment.app.Fragment
 import com.b4sel.feature.solid.domain.navigation.SolidNavigator
 import com.b4sel.feature.solid.domain.navigation.SolidRouter
-import com.b4sel.feature.solid.presentation.usecase.MyNavigator
 import javax.inject.Inject
 
 class SolidRouterImpl @Inject constructor(
