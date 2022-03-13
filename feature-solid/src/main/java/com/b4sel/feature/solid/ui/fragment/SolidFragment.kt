@@ -15,6 +15,11 @@ import javax.inject.Inject
 
 class SolidFragment : Fragment(R.layout.solid_fragment) {
 
+    companion object {
+        fun newInstance(): SolidFragment =
+            SolidFragment()
+    }
+
     private val layout by viewBinding(SolidFragmentBinding::bind)
 
     @Inject

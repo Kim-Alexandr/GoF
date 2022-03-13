@@ -9,6 +9,11 @@ import com.b4sel.shared.solid.SolidCatalog
 
 class IspFragment : Fragment(R.layout.isp_fragment) {
 
+    companion object {
+        fun newInstance(): IspFragment =
+            IspFragment()
+    }
+
     private val layout by viewBinding(IspFragmentBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

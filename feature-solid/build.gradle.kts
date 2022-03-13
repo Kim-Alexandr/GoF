@@ -7,6 +7,13 @@ dependencies {
     implementation(project(":shared-core"))
     implementation(project(":shared-solid"))
 
+    //todo вот эту штуку надо обяз исправить
+    implementation(project(":feature-srp"))
+    implementation(project(":feature-ocp"))
+    implementation(project(":feature-lsp"))
+    implementation(project(":feature-isp"))
+    implementation(project(":feature-dip"))
+
     implementation(AndroidX.fragment)
     implementation(AndroidX.material)
     implementation(Libraries.viewBinding)

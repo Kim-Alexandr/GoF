@@ -9,6 +9,11 @@ import com.b4sel.shared.solid.SolidCatalog
 
 class LspFragment : Fragment(R.layout.lsp_fragment) {
 
+    companion object {
+        fun newInstance(): LspFragment =
+            LspFragment()
+    }
+
     private val layout by viewBinding(LspFragmentBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
