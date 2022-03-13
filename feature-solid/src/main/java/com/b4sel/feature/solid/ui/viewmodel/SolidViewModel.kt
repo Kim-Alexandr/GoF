@@ -1,11 +1,13 @@
 package com.b4sel.feature.solid.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
+import com.b4sel.feature.solid.domain.navigation.SolidRouter
 import com.b4sel.feature.solid.presentation.interactor.SolidInteractor
 import javax.inject.Inject
 
 class SolidViewModel @Inject constructor(
-    private val solidInteractor: SolidInteractor
+    private val solidInteractor: SolidInteractor,
+//    private val solidRouter: SolidRouter
 ) : ViewModel() {
 
     fun openSrp() =
