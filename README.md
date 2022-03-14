@@ -36,4 +36,5 @@
 ## :feature-principal
 Модуль с bottom navigation. Содержит в себе еще три feature модуля feature-structural, feature-behavioral, feature-creational. 
 
-
+## Возможность подменить навигацию
+Для того чтобы все работало корректно необходимо раскоментить binds методы в SolidNavigationModule и в SelectionNavigationModule
