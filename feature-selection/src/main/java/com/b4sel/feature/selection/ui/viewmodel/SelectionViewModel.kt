@@ -10,7 +10,4 @@ class SelectionViewModel @Inject constructor(
 
     fun openSolid() =
         selectionInteractor.openSolidUseCase()
-
-    fun openPrincipal() =
-        selectionInteractor.openPrincipalUseCase()
 }

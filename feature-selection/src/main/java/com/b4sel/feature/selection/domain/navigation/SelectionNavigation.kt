@@ -4,5 +4,4 @@ import com.b4sel.shared.navigation.NavigationCommand
 
 interface SelectionNavigation {
     val toSolid: NavigationCommand
-    val toGoF: NavigationCommand
 }

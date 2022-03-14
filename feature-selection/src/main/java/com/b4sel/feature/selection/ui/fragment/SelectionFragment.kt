@@ -2,6 +2,7 @@ package com.b4sel.feature.selection.ui.fragment
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.b4sel.feature.selection.R
@@ -14,6 +15,7 @@ import javax.inject.Inject
 class SelectionFragment : Fragment(R.layout.selection_fragment) {
 
     private val layout by viewBinding(SelectionFragmentBinding::bind)
+
     @Inject
     lateinit var viewModel: SelectionViewModel
 
@@ -29,7 +31,7 @@ class SelectionFragment : Fragment(R.layout.selection_fragment) {
                 navigate(viewModel.openSolid())
             }
             openPrincipalBtn.setOnClickListener {
-                navigate(viewModel.openPrincipal())
+                // will be later
             }
         }
     }

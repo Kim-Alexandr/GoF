@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="patterns_creational">Creational</string>
-    <string name="patterns_structural">Structural</string>
-    <string name="patterns_behavioural">Behavioural</string>
-</resources>
