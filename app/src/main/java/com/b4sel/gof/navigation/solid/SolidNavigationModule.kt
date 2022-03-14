@@ -28,7 +28,7 @@ interface SolidNavigationModule {
 @Module
 class RasM24NavigatorProvider {
     @Provides
-    fun provideRasm24Navigator(): RasM24Navigator {
+    fun provideRasM24Navigator(): RasM24Navigator {
         return RasM24Navigator(R.id.fragment_host)
     }
 }
