@@ -1,4 +1,4 @@
-package com.b4sel.feature.solid.presentation
+package com.b4sel.feature.solid.navigator
 
 import androidx.fragment.app.Fragment
 import com.b4sel.feature.solid.domain.navigation.SolidNavigation
