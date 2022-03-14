@@ -18,17 +18,17 @@ interface SolidNavigationModule {
     @Binds
     fun bindSolidRouter(solidRouterImpl: SolidRouterImpl): SolidRouter
 
-    @Binds
-    fun bindSolidNavigator(mySolidNavigator: MySolidNavigator): SolidNavigator
-
 //    @Binds
-//    fun bindSolidNavigator(rasM24Navigator: RasM24Navigator): SolidNavigator
+//    fun bindSolidNavigator(mySolidNavigator: MySolidNavigator): SolidNavigator
+
+    @Binds
+    fun bindSolidNavigator(rasM24Navigator: RasM24SolidNavigator): SolidNavigator
 }
 
 @Module
-class RasM24NavigatorProvider {
+class RasM24SolidNavigatorProvider {
     @Provides
-    fun provideRasM24Navigator(): RasM24SolidNavigator {
+    fun provideRasM24SolidNavigator(): RasM24SolidNavigator {
         return RasM24SolidNavigator(R.id.fragment_host)
     }
 }

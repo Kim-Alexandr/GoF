@@ -1,10 +1,14 @@
 package com.b4sel.gof.navigation.selection
 
 import com.b4sel.feature.selection.domain.navigation.SelectionNavigation
+import com.b4sel.feature.selection.domain.navigation.SelectionNavigator
 import com.b4sel.feature.selection.domain.navigation.SelectionRouter
-import com.b4sel.feature.selection.navigator.MySelectionRouter
+import com.b4sel.feature.selection.navigator.MySelectionNavigator
+import com.b4sel.feature.selection.navigator.RasM24SelectionNavigator
+import com.b4sel.gof.R
 import dagger.Binds
 import dagger.Module
+import dagger.Provides
 
 @Module
 interface SelectionNavigationModule {
@@ -12,5 +16,19 @@ interface SelectionNavigationModule {
     fun bindsSelectionNavigation(selectionNavigationImpl: SelectionNavigationImpl): SelectionNavigation
 
     @Binds
-    fun bindsSelectionRouter(mySelectionRouter: MySelectionRouter): SelectionRouter
+    fun bindsSelectionRouter(selectionRouter: SelectionRouterImpl): SelectionRouter
+
+//    @Binds
+//    fun bindSelectionNavigator(selectionNavigator: MySelectionNavigator): SelectionNavigator
+
+    @Binds
+    fun bindSelectionNavigator(rasM24SelectionNavigator: RasM24SelectionNavigator): SelectionNavigator
+}
+
+@Module
+class RasM24SelectionNavigatorProvider {
+    @Provides
+    fun provideRasM24SelectionNavigator(): RasM24SelectionNavigator {
+        return RasM24SelectionNavigator(R.id.fragment_host)
+    }
 }
