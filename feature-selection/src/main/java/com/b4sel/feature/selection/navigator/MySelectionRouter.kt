@@ -1,23 +1,27 @@
-package com.b4sel.feature.selection.presentation.usecase
+package com.b4sel.feature.selection.navigator
 
+import androidx.fragment.app.Fragment
 import com.b4sel.feature.selection.domain.navigation.SelectionNavigation
-import com.b4sel.feature.selection.domain.usecase.OpenSolidUseCase
-import com.b4sel.shared.navigation.NavigationCommand
+import com.b4sel.feature.selection.domain.navigation.SelectionRouter
+import com.b4sel.shared.navigation.navigate
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
 import javax.inject.Inject
 
-class OpenSolidUseCaseImpl @Inject constructor() : OpenSolidUseCase, HasAndroidInjector {
+class MySelectionRouter @Inject constructor() : HasAndroidInjector, SelectionRouter {
+
     @Inject
     lateinit var androidInjector: DispatchingAndroidInjector<Any>
 
     @Inject
     lateinit var selectionNavigation: SelectionNavigation
 
+    override fun openSolid(fragment: Fragment) {
+        fragment.navigate(selectionNavigation.toSolid)
+    }
+
     override fun androidInjector(): AndroidInjector<Any> =
         androidInjector
 
-    override fun invoke(): NavigationCommand =
-        selectionNavigation.toSolid
 }

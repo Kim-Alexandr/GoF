@@ -9,9 +9,10 @@ import com.b4sel.feature.lsp.LspFragment
 import com.b4sel.feature.ocp.OcpFragment
 import com.b4sel.feature.solid.domain.navigation.SolidNavigator
 import com.b4sel.feature.srp.SrpFragment
+import com.b4sel.shared.navigation.forwardTo
 import javax.inject.Inject
 
-class RasM24Navigator @Inject constructor(
+class RasM24SolidNavigator @Inject constructor(
     @IdRes private val hostId: Int
 ) : SolidNavigator {
 
@@ -35,15 +36,4 @@ class RasM24Navigator @Inject constructor(
         fragment.parentFragmentManager.forwardTo(DipFragment.newInstance(), hostId)
     }
 
-}
-
-private val Fragment.key: String? get() = this::class.simpleName
-
-fun FragmentManager.forwardTo(fragment: Fragment, @IdRes container: Int) {
-    findFragmentById(container)?.onHiddenChanged(true)
-    beginTransaction().run {
-        replace(container, fragment)
-        addToBackStack(fragment.key)
-        commitAllowingStateLoss()
-    }
 }

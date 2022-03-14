@@ -9,34 +9,34 @@ import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
 import javax.inject.Inject
 
-class MyNavigator @Inject constructor() : HasAndroidInjector, SolidNavigator {
+class MySolidNavigator @Inject constructor() : HasAndroidInjector, SolidNavigator {
 
     @Inject
     lateinit var androidInjector: DispatchingAndroidInjector<Any>
 
     @Inject
-    lateinit var selectionNavigation: SolidNavigation
+    lateinit var solidNavigation: SolidNavigation
 
     override fun androidInjector(): AndroidInjector<Any> =
         androidInjector
 
     override fun navigateToSrp(fragment: Fragment) {
-        fragment.navigate(selectionNavigation.toSrp)
+        fragment.navigate(solidNavigation.toSrp)
     }
 
     override fun navigateToOcp(fragment: Fragment) {
-        fragment.navigate(selectionNavigation.toOcp)
+        fragment.navigate(solidNavigation.toOcp)
     }
 
     override fun navigateToLsp(fragment: Fragment) {
-        fragment.navigate(selectionNavigation.toLsp)
+        fragment.navigate(solidNavigation.toLsp)
     }
 
     override fun navigateToIsp(fragment: Fragment) {
-        fragment.navigate(selectionNavigation.toIsp)
+        fragment.navigate(solidNavigation.toIsp)
     }
 
     override fun navigateToDip(fragment: Fragment) {
-        fragment.navigate(selectionNavigation.toDip)
+        fragment.navigate(solidNavigation.toDip)
     }
 }
