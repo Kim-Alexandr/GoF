@@ -15,7 +15,7 @@ import dagger.android.support.AndroidSupportInjectionModule
         SolidScreenModule::class
     ]
 )
-interface ApplicationModule {
+interface AppModule {
 
     @ActivityScope
     @ContributesAndroidInjector(

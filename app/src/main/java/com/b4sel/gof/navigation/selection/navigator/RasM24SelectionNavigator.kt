@@ -1,4 +1,4 @@
-package com.b4sel.feature.selection.navigator
+package com.b4sel.gof.navigation.selection.navigator
 
 import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment

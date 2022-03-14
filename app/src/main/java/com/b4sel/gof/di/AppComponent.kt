@@ -1,24 +1,28 @@
 package com.b4sel.gof.di
 
+import android.app.Application
 import android.content.Context
+import com.b4sel.feature.selection.di.SelectionDependencies
+import com.b4sel.feature.selection.domain.navigation.SelectionRouter
 import com.b4sel.gof.App
-import com.b4sel.gof.di.module.ApplicationModule
+import com.b4sel.gof.di.module.AppModule
 import com.b4sel.shared.core.scope.ApplicationScope
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
 
 @ApplicationScope
-@Component(
-    modules = [
-        ApplicationModule::class
-    ]
-)
-interface AppComponent : AndroidInjector<App> {
+@Component(modules = [AppModule::class])
+interface AppComponent : SelectionDependencies, AndroidInjector<App> {
 
-    @Component.Factory
-    interface Factory {
+    override val router: SelectionRouter
 
-        fun create(@BindsInstance appContext: Context): AppComponent
+    @Component.Builder
+    interface Builder {
+
+        @BindsInstance
+        fun application(application: Application): Builder
+
+        fun build(): AppComponent
     }
 }

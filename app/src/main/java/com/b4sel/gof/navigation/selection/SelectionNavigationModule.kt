@@ -3,8 +3,7 @@ package com.b4sel.gof.navigation.selection
 import com.b4sel.feature.selection.domain.navigation.SelectionNavigation
 import com.b4sel.feature.selection.domain.navigation.SelectionNavigator
 import com.b4sel.feature.selection.domain.navigation.SelectionRouter
-import com.b4sel.feature.selection.navigator.MySelectionNavigator
-import com.b4sel.feature.selection.navigator.RasM24SelectionNavigator
+import com.b4sel.gof.navigation.selection.navigator.RasM24SelectionNavigator
 import com.b4sel.gof.R
 import dagger.Binds
 import dagger.Module
