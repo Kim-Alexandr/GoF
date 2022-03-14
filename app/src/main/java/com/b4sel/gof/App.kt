@@ -2,6 +2,7 @@ package com.b4sel.gof
 
 import android.app.Application
 import com.b4sel.feature.selection.di.SelectionDependenciesStore
+import com.b4sel.feature.solid.di.SolidDependenciesStore
 import com.b4sel.gof.di.AppComponent
 import com.b4sel.gof.di.DaggerAppComponent
 
@@ -16,5 +17,6 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         SelectionDependenciesStore.dependencies = appComponent
+        SolidDependenciesStore.dependencies = appComponent
     }
 }

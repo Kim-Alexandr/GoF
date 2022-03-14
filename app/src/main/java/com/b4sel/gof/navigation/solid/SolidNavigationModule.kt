@@ -3,9 +3,9 @@ package com.b4sel.gof.navigation.solid
 import com.b4sel.feature.solid.domain.navigation.SolidNavigation
 import com.b4sel.feature.solid.domain.navigation.SolidNavigator
 import com.b4sel.feature.solid.domain.navigation.SolidRouter
-import com.b4sel.feature.solid.navigator.MySolidNavigator
-import com.b4sel.feature.solid.navigator.RasM24SolidNavigator
+import com.b4sel.gof.navigation.solid.navigator.RasM24SolidNavigator
 import com.b4sel.gof.R
+import com.b4sel.gof.navigation.solid.navigator.MySolidNavigator
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -18,11 +18,11 @@ interface SolidNavigationModule {
     @Binds
     fun bindSolidRouter(solidRouterImpl: SolidRouterImpl): SolidRouter
 
-//    @Binds
-//    fun bindSolidNavigator(mySolidNavigator: MySolidNavigator): SolidNavigator
-
     @Binds
-    fun bindSolidNavigator(rasM24Navigator: RasM24SolidNavigator): SolidNavigator
+    fun bindSolidNavigator(mySolidNavigator: MySolidNavigator): SolidNavigator
+
+//    @Binds
+//    fun bindSolidNavigator(rasM24Navigator: RasM24SolidNavigator): SolidNavigator
 }
 
 @Module

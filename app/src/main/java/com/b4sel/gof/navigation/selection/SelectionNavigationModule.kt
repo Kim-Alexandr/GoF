@@ -5,6 +5,7 @@ import com.b4sel.feature.selection.domain.navigation.SelectionNavigator
 import com.b4sel.feature.selection.domain.navigation.SelectionRouter
 import com.b4sel.gof.navigation.selection.navigator.RasM24SelectionNavigator
 import com.b4sel.gof.R
+import com.b4sel.gof.navigation.selection.navigator.MySelectionNavigator
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -17,11 +18,11 @@ interface SelectionNavigationModule {
     @Binds
     fun bindsSelectionRouter(selectionRouter: SelectionRouterImpl): SelectionRouter
 
-//    @Binds
-//    fun bindSelectionNavigator(selectionNavigator: MySelectionNavigator): SelectionNavigator
-
     @Binds
-    fun bindSelectionNavigator(rasM24SelectionNavigator: RasM24SelectionNavigator): SelectionNavigator
+    fun bindSelectionNavigator(selectionNavigator: MySelectionNavigator): SelectionNavigator
+
+//    @Binds
+//    fun bindSelectionNavigator(rasM24SelectionNavigator: RasM24SelectionNavigator): SelectionNavigator
 }
 
 @Module

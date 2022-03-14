@@ -23,7 +23,7 @@ interface SelectionComponent {
 }
 
 interface SelectionDependencies {
-    val router: SelectionRouter
+    val selectionRouter: SelectionRouter
 }
 
 interface SelectionDependenciesProvider {
