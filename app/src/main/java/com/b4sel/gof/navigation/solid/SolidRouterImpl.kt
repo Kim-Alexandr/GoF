@@ -1,31 +1,30 @@
 package com.b4sel.gof.navigation.solid
 
-import androidx.fragment.app.Fragment
-import com.b4sel.feature.solid.domain.navigation.SolidNavigator
 import com.b4sel.feature.solid.domain.navigation.SolidRouter
+import com.b4sel.gof.navigation.solid.navigator.RasM24SolidNavigator
 import javax.inject.Inject
 
 class SolidRouterImpl @Inject constructor(
-    private val navigator: SolidNavigator
+    private val navigator: RasM24SolidNavigator
 ) : SolidRouter {
 
-    override fun openSrp(fragment: Fragment) {
-        navigator.navigateToSrp(fragment)
+    override fun openSrp() {
+        navigator.navigateToSrp()
     }
 
-    override fun openOcp(fragment: Fragment) {
-        navigator.navigateToOcp(fragment)
+    override fun openOcp() {
+        navigator.navigateToOcp()
     }
 
-    override fun openLsp(fragment: Fragment) {
-        navigator.navigateToLsp(fragment)
+    override fun openLsp() {
+        navigator.navigateToLsp()
     }
 
-    override fun openIsp(fragment: Fragment) {
-        navigator.navigateToIsp(fragment)
+    override fun openIsp() {
+        navigator.navigateToIsp()
     }
 
-    override fun openDip(fragment: Fragment) {
-        navigator.navigateToDip(fragment)
+    override fun openDip() {
+        navigator.navigateToDip()
     }
 }

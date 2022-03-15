@@ -40,11 +40,11 @@ class SolidFragment : Fragment(R.layout.solid_fragment) {
             items = SolidCatalog.solidList,
             onItemClick = { item ->
                 when (item) {
-                    SRP -> router.openSrp(this)
-                    OCP -> router.openOcp(this)
-                    LSP -> router.openLsp(this)
-                    ISP -> router.openIsp(this)
-                    DIP -> router.openDip(this)
+                    SRP -> router.openSrp()
+                    OCP -> router.openOcp()
+                    LSP -> router.openLsp()
+                    ISP -> router.openIsp()
+                    DIP -> router.openDip()
                 }
             })
     }
