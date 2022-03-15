@@ -9,10 +9,16 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.b4sel.feature.selection.R
 import com.b4sel.feature.selection.databinding.SelectionFragmentBinding
 import com.b4sel.feature.selection.di.SelectionComponentViewModel
+import com.b4sel.feature.selection.domain.navigation.SelectionFragmentProvider
 import com.b4sel.feature.selection.domain.navigation.SelectionRouter
 import javax.inject.Inject
 
 class SelectionFragment : Fragment(R.layout.selection_fragment) {
+
+    companion object {
+        fun newInstance(): SelectionFragment =
+            SelectionFragment()
+    }
 
     private val layout by viewBinding(SelectionFragmentBinding::bind)
 
@@ -21,6 +27,7 @@ class SelectionFragment : Fragment(R.layout.selection_fragment) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        SelectionFragmentProvider.selectionFragment = this
         ViewModelProvider(this).get<SelectionComponentViewModel>()
             .selectionComponent.inject(this)
     }
@@ -29,7 +36,7 @@ class SelectionFragment : Fragment(R.layout.selection_fragment) {
         super.onViewCreated(view, savedInstanceState)
         with(layout) {
             openSolidBtn.setOnClickListener {
-                router.openSolid(this@SelectionFragment)
+                router.openSolid()
             }
             openPrincipalBtn.setOnClickListener {
                 // will be later
