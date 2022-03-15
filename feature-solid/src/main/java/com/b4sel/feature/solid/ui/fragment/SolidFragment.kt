@@ -9,6 +9,7 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.b4sel.feature.solid.R
 import com.b4sel.feature.solid.databinding.SolidFragmentBinding
 import com.b4sel.feature.solid.di.SolidComponentViewModel
+import com.b4sel.feature.solid.domain.navigation.SolidFragmentProvider
 import com.b4sel.feature.solid.domain.navigation.SolidRouter
 import com.b4sel.feature.solid.ui.adapter.SolidAdapter
 import com.b4sel.shared.solid.SolidCatalog
@@ -29,6 +30,7 @@ class SolidFragment : Fragment(R.layout.solid_fragment) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        SolidFragmentProvider.solidFragment = this
         ViewModelProvider(this).get<SolidComponentViewModel>()
             .solidComponent.inject(this)
     }
