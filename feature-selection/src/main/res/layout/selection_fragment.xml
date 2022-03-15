@@ -17,6 +17,8 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/open_principal_btn"
         android:text="@string/provide_patterns"
+        android:backgroundTint="@android:color/darker_gray"
+        android:enabled="false"
         app:cornerRadius="@dimen/space_16"
         app:rippleColor="?attr/colorControlHighlight"
         style="@style/SelectionPrimaryButton" />

@@ -1,13 +1,22 @@
 package com.b4sel.gof
 
+import android.app.Application
+import com.b4sel.feature.selection.di.SelectionDependenciesStore
+import com.b4sel.feature.solid.di.SolidDependenciesStore
+import com.b4sel.gof.di.AppComponent
 import com.b4sel.gof.di.DaggerAppComponent
-import dagger.android.AndroidInjector
-import dagger.android.DaggerApplication
 
-class App : DaggerApplication() {
+class App : Application() {
 
-    override fun applicationInjector(): AndroidInjector<out DaggerApplication> =
-        DaggerAppComponent
-            .factory()
-            .create(this)
+    val appComponent: AppComponent by lazy {
+        DaggerAppComponent.builder()
+            .application(this)
+            .build()
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        SelectionDependenciesStore.dependencies = appComponent
+        SolidDependenciesStore.dependencies = appComponent
+    }
 }

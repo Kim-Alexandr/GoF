@@ -22,17 +22,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/feature-behavioral" />
-            <option value="$PROJECT_DIR$/feature-creational" />
             <option value="$PROJECT_DIR$/feature-dip" />
             <option value="$PROJECT_DIR$/feature-isp" />
             <option value="$PROJECT_DIR$/feature-lsp" />
             <option value="$PROJECT_DIR$/feature-ocp" />
-            <option value="$PROJECT_DIR$/feature-patterns" />
             <option value="$PROJECT_DIR$/feature-selection" />
             <option value="$PROJECT_DIR$/feature-solid" />
             <option value="$PROJECT_DIR$/feature-srp" />
-            <option value="$PROJECT_DIR$/feature-structural" />
             <option value="$PROJECT_DIR$/gradle-convection" />
             <option value="$PROJECT_DIR$/shared-core" />
             <option value="$PROJECT_DIR$/shared-navigation" />

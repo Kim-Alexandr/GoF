@@ -3,14 +3,16 @@ package com.b4sel.feature.solid.ui.fragment
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.get
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.b4sel.feature.solid.R
 import com.b4sel.feature.solid.databinding.SolidFragmentBinding
+import com.b4sel.feature.solid.di.SolidComponentViewModel
 import com.b4sel.feature.solid.domain.navigation.SolidRouter
 import com.b4sel.feature.solid.ui.adapter.SolidAdapter
 import com.b4sel.shared.solid.SolidCatalog
 import com.b4sel.shared.solid.domain.model.SolidItem.*
-import dagger.android.support.AndroidSupportInjection
 import javax.inject.Inject
 
 class SolidFragment : Fragment(R.layout.solid_fragment) {
@@ -27,7 +29,8 @@ class SolidFragment : Fragment(R.layout.solid_fragment) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        AndroidSupportInjection.inject(this)
+        ViewModelProvider(this).get<SolidComponentViewModel>()
+            .solidComponent.inject(this)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
