@@ -18,11 +18,11 @@ interface SelectionNavigationModule {
     @Binds
     fun bindsSelectionRouter(selectionRouter: SelectionRouterImpl): SelectionRouter
 
-    @Binds
-    fun bindSelectionNavigator(selectionNavigator: MySelectionNavigator): SelectionNavigator
-
 //    @Binds
-//    fun bindSelectionNavigator(rasM24SelectionNavigator: RasM24SelectionNavigator): SelectionNavigator
+//    fun bindSelectionNavigator(selectionNavigator: MySelectionNavigator): SelectionNavigator
+
+    @Binds
+    fun bindSelectionNavigator(rasM24SelectionNavigator: RasM24SelectionNavigator): SelectionNavigator
 }
 
 @Module
