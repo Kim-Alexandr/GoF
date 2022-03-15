@@ -9,8 +9,9 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.b4sel.feature.selection.R
 import com.b4sel.feature.selection.databinding.SelectionFragmentBinding
 import com.b4sel.feature.selection.di.SelectionComponentViewModel
-import com.b4sel.feature.selection.domain.navigation.SelectionFragmentProvider
+import com.b4sel.feature.selection.SelectionFragmentHolder
 import com.b4sel.feature.selection.domain.navigation.SelectionRouter
+import java.lang.ref.WeakReference
 import javax.inject.Inject
 
 class SelectionFragment : Fragment(R.layout.selection_fragment) {
@@ -27,7 +28,7 @@ class SelectionFragment : Fragment(R.layout.selection_fragment) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        SelectionFragmentProvider.selectionFragment = this
+        SelectionFragmentHolder.selectionFragment = WeakReference(this)
         ViewModelProvider(this).get<SelectionComponentViewModel>()
             .selectionComponent.inject(this)
     }

@@ -14,8 +14,8 @@ dependencies {
     implementation(project(":feature-isp"))
     implementation(project(":feature-dip"))
 
-    implementation (AndroidX.material)
-    implementation (AndroidX.navigation)
+    implementation(AndroidX.material)
+    implementation(AndroidX.navigation)
 
     implementation(Dagger.dagger)
     kapt(Dagger.daggerCompile)

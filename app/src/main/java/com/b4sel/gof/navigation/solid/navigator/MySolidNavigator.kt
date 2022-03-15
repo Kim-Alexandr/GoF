@@ -1,6 +1,6 @@
 package com.b4sel.gof.navigation.solid.navigator
 
-import com.b4sel.feature.solid.domain.navigation.SolidFragmentProvider
+import com.b4sel.feature.solid.SolidFragmentHolder
 import com.b4sel.feature.solid.domain.navigation.SolidNavigation
 import com.b4sel.shared.navigation.navigate
 import javax.inject.Inject
@@ -10,22 +10,22 @@ class MySolidNavigator @Inject constructor(
 ) {
 
     fun navigateToSrp() {
-        SolidFragmentProvider.solidFragment?.navigate(solidNavigation.toSrp)
+        SolidFragmentHolder.solidFragment?.get()?.navigate(solidNavigation.toSrp)
     }
 
     fun navigateToOcp() {
-        SolidFragmentProvider.solidFragment?.navigate(solidNavigation.toOcp)
+        SolidFragmentHolder.solidFragment?.get()?.navigate(solidNavigation.toOcp)
     }
 
     fun navigateToLsp() {
-        SolidFragmentProvider.solidFragment?.navigate(solidNavigation.toLsp)
+        SolidFragmentHolder.solidFragment?.get()?.navigate(solidNavigation.toLsp)
     }
 
     fun navigateToIsp() {
-        SolidFragmentProvider.solidFragment?.navigate(solidNavigation.toIsp)
+        SolidFragmentHolder.solidFragment?.get()?.navigate(solidNavigation.toIsp)
     }
 
     fun navigateToDip() {
-        SolidFragmentProvider.solidFragment?.navigate(solidNavigation.toDip)
+        SolidFragmentHolder.solidFragment?.get()?.navigate(solidNavigation.toDip)
     }
 }
