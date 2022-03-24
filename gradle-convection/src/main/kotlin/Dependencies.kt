@@ -33,9 +33,4 @@ object Dagger {
 
 	const val dagger = "com.google.dagger:dagger:$version"
 	const val daggerCompile = "com.google.dagger:dagger-compiler:$version"
-
-	const val DAGGER_ANDROID = "com.google.dagger:dagger-android:$version"
-	const val DAGGER_ANDROID_SUPPORT = "com.google.dagger:dagger-android-support:$version"
-	const val DAGGER_ANDROID_PROCESSOR =
-		"com.google.dagger:dagger-android-processor:$version"
 }

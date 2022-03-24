@@ -9,6 +9,11 @@ import com.b4sel.shared.solid.SolidCatalog
 
 class OcpFragment : Fragment(R.layout.ocp_fragment) {
 
+    companion object {
+        fun newInstance(): OcpFragment =
+            OcpFragment()
+    }
+
     private val layout by viewBinding(OcpFragmentBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

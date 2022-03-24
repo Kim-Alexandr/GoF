@@ -9,6 +9,11 @@ import com.b4sel.shared.solid.SolidCatalog
 
 class DipFragment : Fragment(R.layout.dip_fragment) {
 
+    companion object {
+        fun newInstance(): DipFragment =
+            DipFragment()
+    }
+
     private val layout by viewBinding(DipFragmentBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

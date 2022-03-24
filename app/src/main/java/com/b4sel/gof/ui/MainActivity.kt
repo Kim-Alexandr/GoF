@@ -1,15 +1,16 @@
 package com.b4sel.gof.ui
 
 import android.os.Bundle
-import androidx.navigation.Navigation
+import androidx.appcompat.app.AppCompatActivity
 import com.b4sel.gof.R
-import dagger.android.support.DaggerAppCompatActivity
+import com.b4sel.gof.ActivityHolder
+import java.lang.ref.WeakReference
 
-class MainActivity : DaggerAppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Navigation.findNavController(this, R.id.fragment_host)
+        ActivityHolder.activity = WeakReference(this)
     }
 }
