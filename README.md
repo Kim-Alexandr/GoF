@@ -1,6 +1,6 @@
 # GoF
 ## Диаграмма заивисимостей. 
-[![](https://github.com/b4sel/GoF/blob/master/Untitled%20Diagram.jpg?raw=true)](https://github.com/b4sel/GoF/blob/master/Untitled%20Diagram.jpg?raw=true)
+[![](https://github.com/b4sel/GoF/blob/master/GoF%20arch%20diagram.png?raw=true)](https://github.com/b4sel/GoF/blob/master/GoF%20arch%20diagram.png?raw=true)
 
 - feature это модули, которые несут какую-нибудь практическую пользу пользователю (с которыми может взаимодействовать пользователь например)
 - shared модули содержат какие-то утилиты или код который может использоваться в нескольких местах
