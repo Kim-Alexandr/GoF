@@ -1,4 +1,7 @@
 # GoF
+# Описание проекта
+- Работа с навигацией в многомодульных проектах
+- Тут нет работы с сетью или кэширования. Просто переходы между экранами. Пример полноценного мномодульного приложения [Stocks](https://github.com/b4sel/Stocks)(in progress)
 ## Диаграмма заивисимостей. 
 [![](https://github.com/b4sel/GoF/blob/master/GoF%20arch%20diagram.png?raw=true)](https://github.com/b4sel/GoF/blob/master/GoF%20arch%20diagram.png?raw=true)
 
